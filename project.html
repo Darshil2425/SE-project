@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Management System</h1>
+        <p>Manage student records easily</p>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+                <input type="text" id="studentId" placeholder="Student ID" required>
+
+                <input type="text" id="studentName" placeholder="Student Name" required>
+
+                <input type="email" id="studentEmail" placeholder="Email" required>
+
+                <input type="text" id="studentCourse" placeholder="Course" required>
+
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="student-section">
+            <h2>Student Records</h2>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search student..."
+            >
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Student Management System | GitHub Version Control Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
